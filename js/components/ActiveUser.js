@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React, { Component } from 'react';
 
 
 export default ({data,update, active}) => {
@@ -10,7 +11,7 @@ export default ({data,update, active}) => {
 
 	return (
     <div className="thumbnail">
-      <img onClick={() => { update({ active: 5 }) }} src={`images/${user.image}.svg`} />
+      <img src={`images/${user.image}.svg`} />
 
       <div className="thumbnail-caption">
         <h3>{user.name}</h3>

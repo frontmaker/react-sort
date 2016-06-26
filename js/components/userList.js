@@ -8,11 +8,14 @@ export default ({ data, update}) => {
 	}
 
 	const users = data.map((user, index) => {
+
 		 return (<UserData user={user} index={index} update={update}/>)
+     
 	});
 
+
 	return (
-	<table className="user-list table table-striped">
+	   <table className="user-list table table-striped">
       <thead>
         <tr>
           <th>Image</th>
